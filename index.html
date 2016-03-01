@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>js!</title>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script>
+      $(document).ready(function(){
+
+        $("h1").click(function(){
+
+          $("div").removeClass("OFF");
+            $("div").addClass("ON");
+        });
+
+        $("h2").click(function(){
+          $("div").addClass("OFF");
+          $("div").removeClass("ON");
+        })
+
+      });
+    </script>
+    <style>
+
+      .ON {
+        height: 400px;
+        width: 300px;
+        background-image:url("ON.png");
+
+
+
+      }
+
+      .OFF {
+      height: 400px;
+      width: 300px;
+      background-image:url("off.png");
+
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <div class="OFF">
+    </div>
+<section class="fancy">
+    <h1>TURN ME ON</h1>
+  </section>
+  <section class="secret">
+    <h2>TURN ME OFF</h2>
+
+
+
+
+    </section>
+
+  </body>
+</html>
